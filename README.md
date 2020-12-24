@@ -2,7 +2,7 @@
 
 ## Example
 
-`python playlist_from_list.py -f path-to-file.txt -p "My sick playlist"
+`python playlist_from_list.py -f path-to-file.txt -p "My sick playlist"`
 
 ## Note
 set you env vars:
