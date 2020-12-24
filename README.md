@@ -4,7 +4,7 @@
 
 `python playlist_from_list.py -f path-to-file.txt -p "My sick playlist"`
 
-## Instructions
+## First Time Setup Instructions
 1. Setup a Spotify app (https://developer.spotify.com/).
 2. Get your ID/Secret.
 3. Create a redirect_uri: `http://localhost:8000`
