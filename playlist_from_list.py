@@ -24,7 +24,7 @@ def chunks(lst, n):
 def get_args():
     parser = argparse.ArgumentParser(description="Create playlist from text file")
     parser.add_argument(
-        "-f", "--file", help="File with list of searches", default='tonedeaf.txt'
+        "-f", "--file", help="File with list of searches", default='lists/chirp.txt'
     )
     parser.add_argument(
         "-p", "--playlist", help="playlist name to create", default='debug_create_' + str(datetime.datetime.now())
@@ -49,7 +49,8 @@ def main():
         lines = f.readlines()
         for line in lines:
             result = sp.search(re.sub(r'[^A-Za-z0-9 ]+', ' ', line.decode('utf-8')))
-            items += [track['id'] for track in result['tracks']['items']]
+            if result['tracks']['items']:
+                items.append(result['tracks']['items'][0]['id'])
    
     playlist = sp.user_playlist_create(sp.current_user()['id'], args.playlist)
     for chunk in chunks(items, 100):
