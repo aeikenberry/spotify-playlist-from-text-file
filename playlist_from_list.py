@@ -22,7 +22,7 @@ def chunks(lst, n):
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description="Adds track to user playlist")
+    parser = argparse.ArgumentParser(description="Create playlist from text file")
     parser.add_argument(
         "-f", "--file", help="File with list of searches", default='tonedeaf.txt'
     )
