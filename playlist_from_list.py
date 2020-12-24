@@ -7,7 +7,7 @@ import re
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
 
-logger = logging.getLogger("examples.add_tracks_to_playlist")
+logger = logging.getLogger("playlist_from_list")
 logging.basicConfig(level="DEBUG")
 scope = "playlist-modify-public"
 
