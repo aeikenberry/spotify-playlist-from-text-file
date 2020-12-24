@@ -11,7 +11,7 @@
 4. set you env vars:
 `SPOTIFY_CLIENT_ID`
 `SPOTIFY_CLIENT_SECRET`
-5. Install dependencies: `pip install-r requirements.txt`
+5. Install dependencies: `pip install -r requirements.txt`
 5. Run the script
 6. Follow the instructions to do Oauth in the browser on first run.
 7. Paste the full url you're redirected to.
